@@ -1,0 +1,100 @@
+@charset "utf-8";
+@import "public.css";
+
+.wrap {
+    background: white;
+    margin: 0 auto;
+    font-size: 0.20rem;
+    color: #333333;
+
+}
+
+.wrap .bg {
+    width: 6.2rem;
+    margin: 0 auto;
+}
+
+.wrap .nav {
+    height: 0.88rem;
+    background-color: #ff9900;
+    padding-top: 0.55rem;
+    /* padding-top: 0.4rem; */
+}
+
+.wrap .nav img {
+    /* width: 0.18rem; */
+    height: 0.7rem;
+    vertical-align: middle;
+    /* margin-top: -15px; */
+}
+
+.wrap .nav .c {
+
+    height: 0.88rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap .nav .c .center {
+    font-size: 0.35rem;
+    color: #fff;
+}
+
+
+.wrap .nav .set {
+    font-size: 17px;
+    color: white;
+    padding-right: 10px;
+    /* margin-bottom: 34px; */
+}
+
+.wrap .content {
+    margin: 115px auto 35px auto;
+}
+
+.wrap .content div {
+    line-height: 0.9rem;
+    margin-top: 0.20rem;
+    border-bottom: 2px solid #a3a3a3;
+}
+
+.wrap .content div input {
+    /* border: none; */
+    outline: none;
+    height: 0.5rem;
+    width: 4rem;
+}
+
+.wrap .content .test {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wrap .content .test input {
+    width: 2.5rem;
+}
+
+.wrap .content .test p:nth-of-type(2) {
+    width: 100px;
+    text-align: center;
+    border: 1px solid red;
+}
+
+.wrap .btn {
+    width: 6.2rem;
+    height: 0.75rem;
+    background: #ff9900;
+    text-align: center;
+    line-height: 0.75rem;
+    font-size: 0.25rem;
+}
+
+.wrap .btn button {
+    color: white;
+}
+
+.wrap .isGree {
+    margin-top: 20px;
+}

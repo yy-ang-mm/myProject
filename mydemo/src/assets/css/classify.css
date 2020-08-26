@@ -1,0 +1,102 @@
+@charset "utf-8";
+@import "public.css";
+
+body {
+  font-size: 0.12rem;
+  line-height: 1;
+}
+
+.wrap .nav {
+  height: 0.88rem;
+  background-color: #f26b11;
+  /* padding-top: 0.4rem; */
+}
+
+.wrap .nav img {
+  width: 0.18rem;
+  height: 0.3rem;
+  vertical-align: middle;
+  margin-top: -15px;
+}
+
+.wrap .nav .c {
+  width: 6.87rem;
+  height: 0.88rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrap .nav .c .center {
+  font-size: 0.35rem;
+  color: #fff;
+}
+
+.wrap .nav .c span {
+  display: inline-block;
+  width: 0.12rem;
+  height: 0.12rem;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.wrap .nav .set {
+  margin-bottom: 34px;
+}
+
+.wrap .body {
+  background-color: #fff;
+  display: flex;
+}
+
+.wrap .body .left {
+  width: 3rem;
+  border-right: 0.01rem solid #ccc;
+}
+
+.wrap .body .left ul {
+  margin-top: 0.52rem;
+}
+
+.wrap .body .left li {
+  font-size: 0.24rem;
+  text-align: center;
+  margin-bottom: 0.88rem;
+}
+
+.wrap .body .right .top {
+  /* width: 5.28rem; */
+  margin-left: 0.25rem;
+  margin-top: 0.55rem;
+  font-size: 0.25rem;
+}
+
+.wrap .body .right .center {
+  margin-top: 0.5rem;
+  margin-left: 0.3rem;
+  /* width: 5.26rem; */
+}
+
+.wrap .body .right .center .box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrap .body .right .center .box div {
+  margin-left: 0.23rem;
+  width: 1.53rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.wrap .body .right .center .box div img {
+  width: 1.44rem;
+  height: 1.51rem;
+}
+
+.wrap .body .right .center .box div p {
+  margin-top: 0.15rem;
+  font-size: 0.22rem;
+  color: #ccc;
+}
