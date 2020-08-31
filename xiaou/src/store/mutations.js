@@ -22,5 +22,18 @@ export default {
     //商品管理列表
     REQ_GOODSLIST(state, payload) {
         state.goodsList = payload
+    },
+    // 会员管理列表
+    REQ_MEMBERLIST(state, payload) {
+        state.memberList = payload
+    },
+    // 轮播图管理列表
+    REQ_BANNERLIST(state, payload) {
+        state.bannerList = payload
+    },
+    //限时秒杀管理
+    REQ_SECKLIST(state, payload) {
+        state.seckList = payload
     }
+
 }

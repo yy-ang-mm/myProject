@@ -1,15 +1,8 @@
 <template>
   <div>
-    <el-table
-      :data="get_CateList"
-      border
-      row-key="id"
-      default-expand-all
-      :tree-props="{children:'children'}"
-      height="480px"
-    >
-      <el-table-column prop="id" label="分类编号"></el-table-column>
-      <el-table-column prop="catename" label="分类名称" width="180"></el-table-column>
+    <el-table :data="get_BannerList" border>
+      <el-table-column prop="id" label="编号"></el-table-column>
+      <el-table-column prop="title" label="轮播图标题"></el-table-column>
       <el-table-column prop="img" label="图片" width="180">
         <template slot-scope="item">
           <div>
@@ -37,24 +30,19 @@
 <script>
 import { mapGetters, mapActions } from "vuex";
 // 引入接口
-import {
-  getCateCount,
-  getCateDel,
-  getCateAdd,
-  getCateEdit,
-} from "../../util/axios";
+import { getBannerDel } from "../../util/axios";
 export default {
   data() {
     return {};
   },
   mounted() {
-    this.getCateListAction(this.pageInfo);
+    this.getBannerListAction();
   },
   computed: {
-    ...mapGetters(["get_CateList"]),
+    ...mapGetters(["get_BannerList"]),
   },
   methods: {
-    ...mapActions(["getCateListAction"]),
+    ...mapActions(["getBannerListAction"]),
     // 点击编辑按钮传id
     update(id) {
       this.$emit("update", {
@@ -70,14 +58,14 @@ export default {
       })
         .then(() => {
           // 调取删除接口
-          getCateDel({ id }).then((res) => {
+          getBannerDel({ id }).then((res) => {
             if (res.code === 200) {
               this.$message({
                 type: "success",
                 message: res.msg,
               });
               // 重新调取列表接口
-              this.getCateListAction();
+              this.getBannerListAction();
             } else {
               this.$message.error(res.msg);
             }

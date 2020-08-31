@@ -10,7 +10,7 @@ let http = axios.create({
 http.interceptors.request.use((req) => {
     // 获取本地存储中的token
     let authorization = ''
-    // console.log(JSON.parse(sessionStorage.getItem('userInfo')), '11111');
+    // console.log(JSON.parse(sessionStorage.getItem('userInfo')), 'userInfo');
     authorization = sessionStorage.getItem('userInfo') ? JSON.parse(sessionStorage.getItem('userInfo')).token : ''
     req.headers.authorization = authorization;
     return req;

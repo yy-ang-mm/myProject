@@ -23,4 +23,16 @@ export default {
     get_GoodsList(state) {
         return state.goodsList
     },
+    // 会员管理列表
+    get_MemberList(state) {
+        return state.memberList
+    },
+    // 轮播图管理列表
+    get_BannerList(state) {
+        return state.bannerList
+    },
+    // 限时秒杀
+    get_SeckList(state) {
+        return state.seckList
+    }
 }

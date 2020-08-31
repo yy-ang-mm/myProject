@@ -6,6 +6,7 @@
       :title="isShow.isAdd?'添加商品规格':'编辑商品规格'"
       :visible.sync="isShow.dialogShow"
       center
+      width="60%"
     >
       <el-form :model="specsform" :rules="rules" ref="ruleForm">
         <el-form-item prop="specsname" label="规格名称" :label-width="formLabelWidth">

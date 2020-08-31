@@ -205,3 +205,82 @@ export function getGoodsEdit(data) {
 export function getGoodsDel(data) {
     return http.post('/goodsdelete', data)
 }
+
+// --------------会员管理-------------
+
+// 会员列表
+export function getMemberList() {
+    return http.get("/memberlist")
+}
+
+// 会员获取（一条）
+export function getMemberInfo(params) {
+    return http.get("/memberinfo", {
+        params
+    })
+}
+
+// 会员修改
+export function getMemberEdit(data) {
+    return http.post("/memberedit", data)
+}
+
+// ----------------------轮播图管理-----------
+// 轮播图添加
+export function getBannerAdd(data) {
+    return http.post('/banneradd', data)
+}
+
+// 轮播图列表接口
+export function getBannerList(params) {
+    return http.get('/bannerlist', {
+        params
+    })
+}
+
+
+//轮播图获取（一条）
+export function getBannerInfo(params) {
+    return http.get('/bannerinfo', {
+        params
+    })
+}
+
+// 轮播图编辑接口
+export function getBannerEdit(data) {
+    return http.post('/banneredit', data)
+}
+
+// 轮播图删除接口
+export function getBannerDel(data) {
+    return http.post('/bannerdelete', data)
+}
+
+// ------------限时秒杀管理---------------
+// 限时秒杀添加
+export function getSeckAdd(data) {
+    return http.post('/seckadd', data)
+}
+
+// 限时秒杀列表接口
+export function getSeckList() {
+    return http.get('/secklist')
+}
+
+
+//限时秒杀获取（一条）
+export function getSeckInfo(params) {
+    return http.get('/seckinfo', {
+        params
+    })
+}
+
+// 限时秒杀编辑接口
+export function getSeckEdit(data) {
+    return http.post('/seckedit', data)
+}
+
+// 限时秒杀删除接口
+export function getSeckDel(data) {
+    return http.post('/seckdelete', data)
+}

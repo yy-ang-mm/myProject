@@ -105,11 +105,10 @@ export default {
         url: "",
         status: 1,
       };
+      //清除validate的表单验证
+      this.$refs["ruleForm"].clearValidate(this.rules);
       //   子组件关闭弹框要去修改父组件dialogShow这个数据
       this.$emit("closeDialog", false);
-      // 方法二
-      //  表单域 model 字段，在使用 validate、resetFields 方法的情况下，prop属性是必填的
-      //   this.$refs["ruleForm"].resetFields();
     },
 
     // 编辑事件

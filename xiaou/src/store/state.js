@@ -5,4 +5,7 @@ export default {
     cateList: [], //商品管理列表
     specsList: [],//商品规格列表
     goodsList: [],//商品管理列表
+    memberList: [],//会员管理列表
+    bannerList: [],//轮播图管理列表
+    seckList: [],//限时秒杀列表
 }

@@ -12,16 +12,7 @@
           <el-input v-model="roleform.rolename"></el-input>
         </el-form-item>
         <el-form-item prop="power" label="角色权限" :label-width="formLabelWidth">
-          <!--             树形结构
-            data	展示数据	array
-            node-key	每个树节点用来作为唯一标识的属性，整棵树应该是唯一的	String
-            props	配置选项，具体看下表	object
-            default-expand-all	是否默认展开所有节点	boolean
-          show-checkbox	节点是否可被选择	boolean
-          
-          getCheckedKeys	若节点可被选择（即 show-checkbox 为 true），则返回目前被选中的节点的 key 所组成的数组
-          setCheckedKeys	通过 keys 设置目前勾选的节点，使用此方法必须设置 node-key 属性	
-          -->
+          <!-- 树形结构 -->
           <el-tree
             :data="get_MenuList"
             show-checkbox
@@ -100,13 +91,12 @@ export default {
         rolename: "",
         status: 1,
       };
+      //清除validate的表单验证
+      this.$refs["ruleForm"].clearValidate(this.rules);
       // 清空tree结构权限的选择状态
       this.$refs.tree.setCheckedKeys([]);
-      //   子组件关闭弹框要去修改父组件dialogShow这个数据
+      //   子组件关闭弹框修改父组件的dialogShow
       this.$emit("closeDialog", false);
-      // 方法二
-      //  表单域 model 字段，在使用 validate、resetFields 方法的情况下，prop属性是必填的
-      //   this.$refs["ruleform"].resetFields();
     },
 
     // 编辑事件

@@ -34,16 +34,17 @@ export default {
     openDialog() {
       this.sonStatus.isAdd = true;
       this.sonStatus.dialogShow = true;
-      this.sonStatus.getCount = this.$refs.elGoods.getCount;
     },
     //关闭弹框
+    //关闭弹框事件
     closeDialog(e) {
       this.sonStatus.dialogShow = e;
     },
+    //update事件
     update(e) {
       this.sonStatus.isAdd = e.isAdd;
       this.sonStatus.dialogShow = true;
-      this.$refs.vAdd.update(e.id, e.changePage);
+      this.$refs.vAdd.update(e.id);
     },
   },
 };
